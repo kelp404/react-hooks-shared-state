@@ -1,4 +1,6 @@
 # react-hooks-shared-state
+[![npm version](https://badge.fury.io/js/react-hooks-shared-state.svg)](https://www.npmjs.com/package/react-hooks-shared-state)
+
 A global state for React with Hooks API.
 
 ## Installation
@@ -36,15 +38,21 @@ sharedState.useState()
 ```
 `useSharedState` and `sharedState.useState` are the same one.
 
+### setSharedState(state)
+#### Parameter `state`
+Type: `any`  
+Required: `required`  
+Assign a new state.
+
 ### useSharedState(path, initialState)
-### Parameter `path`
+#### Parameter `path`
 Type: `string`  
 Required: `optional`  
 The object path of the state.  
 When the path is null it will return the state(root).  
 If you just want to use a part of state in the component, pass the object path.
 
-### Parameter `initialState`
+#### Parameter `initialState`
 Type: `any`  
 Required: `optional`  
 The initial state.
