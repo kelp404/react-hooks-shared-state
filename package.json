@@ -19,6 +19,11 @@
     "url": "https://github.com/kelp404/react-hooks-shared-state/issues"
   },
   "homepage": "https://github.com/kelp404/react-hooks-shared-state#readme",
+  "keywords": [
+    "react",
+    "react-hooks",
+    "global-state"
+  ],
   "dependencies": {
     "object-path": "0.11.4",
     "react": "16.8.6"

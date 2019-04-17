@@ -39,12 +39,13 @@ sharedState.useState()
 `useSharedState` and `sharedState.useState` are the same one.
 
 ### setSharedState(state)
+Assign a new stateful value.
 #### Parameter `state`
 Type: `any`  
 Required: `required`  
-Assign a new state.
 
 ### useSharedState(path, initialState)
+Returns a stateful value, and a function to update it.
 #### Parameter `path`
 Type: `string`  
 Required: `optional`  
