@@ -27,8 +27,7 @@ const Component = () => {
 };
 ```
 
-## Document
-### Syntactic sugar
+## Syntactic sugar
 ```js
 const {useSharedState} = require('react-hooks-shared-state');
 ```
@@ -38,22 +37,28 @@ sharedState.useState()
 ```
 `useSharedState` and `sharedState.useState` are the same one.
 
-### setSharedState(state)
+## setSharedState(state)
+```js
+const {setSharedState} = require('react-hooks-shared-state');
+```
 Assign a new stateful value.
-#### Parameter `state`
+### Parameter `state`
 Type: `any`  
 Required: `required`  
 
-### useSharedState(path, initialState)
+## useSharedState(path, initialState)
+```js
+const {useSharedState} = require('react-hooks-shared-state');
+```
 Returns a stateful value, and a function to update it.
-#### Parameter `path`
+### Parameter `path`
 Type: `string`  
 Required: `optional`  
 The object path of the state.  
 When the path is null it will return the state(root).  
 If you just want to use a part of state in the component, pass the object path.
 
-#### Parameter `initialState`
+### Parameter `initialState`
 Type: `any`  
 Required: `optional`  
 The initial state.
