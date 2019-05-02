@@ -7,6 +7,7 @@
     "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "build": "./node_modules/webpack/bin/webpack.js --env.mode=production",
     "test": "./node_modules/jest/bin/jest.js --coverage",
+    "coveralls": "./node_modules/coveralls/bin/coveralls.js < ./coverage/lcov.info",
     "ncu": "./node_modules/npm-check-updates/bin/ncu"
   },
   "repository": {
@@ -34,6 +35,7 @@
     "@babel/preset-env": "7.4.3",
     "@babel/preset-react": "7.0.0",
     "babel-loader": "8.0.5",
+    "coveralls": "3.0.3",
     "eslint": "5.16.0",
     "eslint-config-xo": "0.26.0",
     "eslint-config-xo-react": "0.19.0",
@@ -43,6 +45,7 @@
     "jest": "24.7.1",
     "npm-check-updates": "3.1.8",
     "react-dom": "16.8.6",
+    "react-test-renderer": "16.8.6",
     "webpack": "4.30.0",
     "webpack-cli": "3.3.0",
     "webpack-dev-server": "3.3.1"

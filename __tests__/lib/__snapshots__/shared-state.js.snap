@@ -1,6 +1,44 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Setter it was generated execute without path. 1`] = `
+exports[`Call useState() to get the state and the setter. 1`] = `
+Object {
+  "test": true,
+}
+`;
+
+exports[`Call useState() to get the state and the setter. 2`] = `
+Object {
+  "test": false,
+}
+`;
+
+exports[`Call useState() twice to make sure it did not assign setter again. 1`] = `
+Object {
+  "test": true,
+}
+`;
+
+exports[`Call useState() twice to make sure it did not assign setter again. 2`] = `
+Object {
+  "test": true,
+}
+`;
+
+exports[`Call useState() with a initial state to get the state. 1`] = `
+Object {
+  "test": true,
+}
+`;
+
+exports[`Call useState() with a path and a initial partial state to get the state. 1`] = `true`;
+
+exports[`Setter assign a partial state and call setters with path. 1`] = `
+Object {
+  "test": true,
+}
+`;
+
+exports[`Setter call setState() without path. 1`] = `
 Object {
   "test": true,
 }
