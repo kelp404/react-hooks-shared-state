@@ -1,20 +1,23 @@
 const path = require('path');
 
-module.exports = () => ({
+module.exports = (env = {}) => ({
   target: 'web',
-  mode: 'development',
+  mode: env.mode || 'development',
   entry: {
     app: path.join(__dirname, 'example', 'app.js')
   },
   devServer: {
     host: 'localhost',
-    port: 8001,
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Max-Age': '3000',
-      'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-      'Access-Control-Allow-Methods': 'GET'
-    }
+    port: 8000,
+    contentBase: path.join(__dirname, 'example'),
+    historyApiFallback: {
+      rewrites: [
+        {
+          from: /.*/,
+          to: 'index.html'
+        }
+      ]
+    },
   },
   resolve: {
     extensions: ['.js']
