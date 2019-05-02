@@ -77,6 +77,24 @@ test('Call useState() with a initial state to get the state.', () => {
   expect(shareState.useState).toBeCalled();
 });
 
+test('Call useState() with a path to get the state and the setter.', () => {
+  const shareState = new SharedState();
+  jest.spyOn(shareState, 'useState');
+  shareState.setState({other: true});
+  const component = () => {
+    const [state, setState] = shareState.useState('test', true);
+    expect(state).toMatchSnapshot();
+    if (state) {
+      setState(false);
+    }
+
+    return React.createElement('div', null);
+  };
+
+  renderer.create(React.createElement(component, null));
+  expect(shareState.useState).toBeCalledTimes(2);
+});
+
 test('Call useState() with a path and a initial partial state to get the state.', () => {
   const shareState = new SharedState();
   jest.spyOn(shareState, 'useState');

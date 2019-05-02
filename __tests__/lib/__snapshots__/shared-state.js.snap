@@ -32,6 +32,10 @@ Object {
 
 exports[`Call useState() with a path and a initial partial state to get the state. 1`] = `true`;
 
+exports[`Call useState() with a path to get the state and the setter. 1`] = `true`;
+
+exports[`Call useState() with a path to get the state and the setter. 2`] = `false`;
+
 exports[`Setter assign a partial state and call setters with path. 1`] = `
 Object {
   "test": true,
