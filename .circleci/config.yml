@@ -14,7 +14,7 @@ jobs:
       - checkout
       - run: npm install
       - run: npm test
-      - run: npm coveralls
+      - run: npm run coveralls
 
   node12:
     working_directory: ~/react-hooks-shared-state
