@@ -1,5 +1,6 @@
 # react-hooks-shared-state
 [![npm version](https://badge.fury.io/js/react-hooks-shared-state.svg)](https://www.npmjs.com/package/react-hooks-shared-state)
+[![CircleCI](https://circleci.com/gh/kelp404/react-hooks-shared-state.svg?style=svg)](https://circleci.com/gh/kelp404/react-hooks-shared-state)
 
 A global state for React with Hooks API.
 

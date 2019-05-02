@@ -1,5 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Setter it was generated execute without path. 1`] = `
+Object {
+  "test": true,
+}
+`;
+
 exports[`setState() is assign state and call setters. 1`] = `
 Object {
   "test": true,
