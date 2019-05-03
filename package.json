@@ -1,6 +1,6 @@
 {
   "name": "react-hooks-shared-state",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "A global state for React with Hooks API.",
   "main": "index.js",
   "scripts": {
