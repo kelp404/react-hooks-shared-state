@@ -1,5 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Call the setter of useState() to update the different part. 1`] = `true`;
+
+exports[`Call the setter of useState() to update the different part. 2`] = `undefined`;
+
+exports[`Call the setter of useState() to update the different part. 3`] = `
+Object {
+  "child": false,
+}
+`;
+
+exports[`Call the setter of useState() to update the different part. 4`] = `
+Object {
+  "test": Object {
+    "child": true,
+  },
+  "testX": Object {
+    "child": false,
+  },
+}
+`;
+
 exports[`Call useState() to get the state and the setter. 1`] = `
 Object {
   "test": true,

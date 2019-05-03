@@ -122,3 +122,27 @@ test('Call useState() twice to make sure it did not assign setter again.', () =>
   renderer.create(React.createElement(component, null));
   expect(shareState.useState).toBeCalled();
 });
+
+test('Call the setter of useState() to update the different part.', () => {
+  const shareState = new SharedState();
+  jest.spyOn(shareState, 'useState');
+  const childComponent = () => {
+    const [state] = shareState.useState('test.child', true);
+    expect(state).toMatchSnapshot();
+    return React.createElement('div', null);
+  };
+
+  const parentComponent = () => {
+    const [state, setState] = shareState.useState('testX');
+    expect(state).toMatchSnapshot();
+    if (!state) {
+      setState({child: false});
+    }
+
+    return React.createElement('div', null);
+  };
+
+  renderer.create(React.createElement(childComponent, null));
+  renderer.create(React.createElement(parentComponent, null));
+  expect(shareState.state).toMatchSnapshot();
+});
