@@ -1,6 +1,7 @@
 # react-hooks-shared-state
 [![npm version](https://badge.fury.io/js/react-hooks-shared-state.svg)](https://www.npmjs.com/package/react-hooks-shared-state)
-[![Coverage Status](https://coveralls.io/repos/github/kelp404/react-hooks-shared-state/badge.svg?branch=master)](https://coveralls.io/github/kelp404/react-hooks-shared-state?branch=master)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/kelp404/react-hooks-shared-state.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/kelp404/react-hooks-shared-state/context:javascript)
+[![Coverage Status](https://coveralls.io/repos/github/kelp404/react-hooks-shared-state/badge.svg?branch=master&a)](https://coveralls.io/github/kelp404/react-hooks-shared-state?branch=master)
 [![CircleCI](https://circleci.com/gh/kelp404/react-hooks-shared-state.svg?style=svg)](https://circleci.com/gh/kelp404/react-hooks-shared-state)
 
 A global state for React with Hooks API.
